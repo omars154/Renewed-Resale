@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 300px;
+            height: 400px;
+            border: 2px solid black;
+            display: grid;
+            align-items: center;
+            align-content: center;
+            grid-template: 
+            "first last" 40px
+            "email email" 40px
+            "pass pass2" 40px
+            / [col-1] 1fr [col-2] 1fr;
+        }
+        .fname{
+            background-color: blue;
+            border: 1px solid black;
+            grid-area: first;
+            align-self: center;
+        }
+        .lname{
+            
+            background-color: blue;
+            border: 1px solid black;
+            grid-area: last;
+            align-self: center;
+        }
+        .email{
+            
+            background-color: blue;
+            border: 1px solid black;
+            grid-area: email;
+        }
+        .pass{
+            
+            background-color: blue;
+            border: 1px solid black;
+            grid-area: pass;
+        }
+        .pass2{
+            
+            background-color: blue;
+            border: 1px solid black;
+            grid-area: pass2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fname">first name</div>
+        <div class="lname">Last Name</div>
+        <div class="email"> Email</div>
+        <div class="pass">Password</div>
+        <div class="pass2">Password 2</div>
+
+    </div>
+</body>
+</html>
